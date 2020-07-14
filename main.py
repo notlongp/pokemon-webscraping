@@ -19,7 +19,9 @@ results = soup.find_all("div", {"class": "infocard"})
 # Multiplier function
 # This function will take a string that indicate a multiplier in the HTML file and return the respective multiplier
 def replace_multiplier(string):
-    if string == 'type-fx-25':
+    if string == 'type-fx-0':
+        return 0
+    elif string == 'type-fx-25':
         return 0.25
     elif string == 'type-fx-50':
         return 0.50
